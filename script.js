@@ -101,23 +101,23 @@ separateItems(productsArray)
 
 
 function cardsPaintingsArray(paintingsArray) {
-  const ulP = document.querySelector(".cardPaintings");
+  const  productUlPaintingsArray = document.querySelector(".cardPaintings");
   for (let i = 0; i < paintingsArray.length; i++) {
-    const cardP = paintingsArray[i]
-    const liP = document.createElement("li");
-    const divP = document.createElement("div")
+    const productCardPaintingsArray = paintingsArray[i]
+    const productLiPaintingsArray = document.createElement("li");
+    const productDivPaintingsArray = document.createElement("div")
 
-    const imgP = document.createElement('img');
-    const nomeP = document.createElement('p');
-    const precoP = document.createElement('small');
-    imgP.src = cardP.image
-    imgP.alt = cardP.name
-    nomeP.innerText = cardP.name
-    precoP.innerText = cardP.price
+    const productImgPaintingsArray = document.createElement('img');
+    const productNomePaintingsArray = document.createElement('p');
+    const productPrecoPaintingsArray = document.createElement('small');
+    productImgPaintingsArray.src = productCardPaintingsArray.image
+    productImgPaintingsArray.alt = productCardPaintingsArray.name
+    productNomePaintingsArray.innerText =  productCardPaintingsArray.name
+    productPrecoPaintingsArray.innerText =  productCardPaintingsArray.price
 
-    divP.append(nomeP, precoP)
-    liP.append(imgP, divP)
-    ulP.appendChild(liP)
+    productDivPaintingsArray.append( productNomePaintingsArray, productPrecoPaintingsArray)
+    productLiPaintingsArray.append( productImgPaintingsArray, productDivPaintingsArray)
+    productUlPaintingsArray.appendChild( productLiPaintingsArray)
   }
 
 }
@@ -127,23 +127,23 @@ cardsPaintingsArray(paintingsArray)
 
 
 function cardsActionFiguresArray(actionFiguresArray) {
-  const ulA = document.querySelector(".cardActionFigure");
+  const productUlActionFiguresArray = document.querySelector(".cardActionFigure");
   for (let i = 0; i < actionFiguresArray.length; i++) {
-    const cardA = actionFiguresArray[i]
-    const liA = document.createElement("li");
-    const divA = document.createElement("div")
+    const productCardActionFiguresArray = actionFiguresArray[i]
+    const productLiActionFiguresArray = document.createElement("li");
+    const productDivActionFiguresArray = document.createElement("div")
 
-    const imgA = document.createElement('img');
-    const nomeA = document.createElement('p');
-    const precoA = document.createElement('small');
-    imgA.src = cardA.image
-    imgA.alt = cardA.name
-    nomeA.innerText = cardA.name
-    precoA.innerText = cardA.price
+    const productImgActionFiguresArray = document.createElement('img');
+    const productNomeActionFiguresArray = document.createElement('p');
+    const productPrecoActionFiguresArray = document.createElement('small');
+    productImgActionFiguresArray.src = productCardActionFiguresArray.image
+    productImgActionFiguresArray.alt = productCardActionFiguresArray.name
+    productNomeActionFiguresArray.innerText = productCardActionFiguresArray.name
+    productPrecoActionFiguresArray.innerText = productCardActionFiguresArray.price
 
-    divA.append(nomeA, precoA)
-    liA.append(imgA, divA)
-    ulA.appendChild(liA)
+    productDivActionFiguresArray.append(productNomeActionFiguresArray, productPrecoActionFiguresArray)
+    productLiActionFiguresArray.append(productImgActionFiguresArray, productDivActionFiguresArray)
+    productUlActionFiguresArray.appendChild(productLiActionFiguresArray)
   }
 
 }

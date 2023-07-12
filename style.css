@@ -32,8 +32,11 @@ nav {
     margin-left: 10px;
     margin-bottom: 10px;
     padding: 0px;
-    color: #0b99fee6;
-    background-color: aliceblue;
+    color: #0A99FE;
+    background-color: #0A99FE10;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: inherit;
 
 }
 
@@ -47,9 +50,9 @@ nav {
 
     margin-top: 30px;
     margin-left: 30px;
-    color: #000000;
-    font-size: larger;
-    
+    color: #1B1B1B;
+    font-size: 20px;
+    font-weight: normal;
     
 }
 
@@ -72,10 +75,6 @@ nav {
     margin-bottom: 15px;
     background-color: #e0e0e0;
     border-radius: 10px;
-
-
-
-
 }
 
 .cardPaintings div,
@@ -104,10 +103,13 @@ nav {
 .cardPaintings p,
 .cardActionFigure p {
     color: #1B1B1B;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: medium;
 }
 
 .cardPaintings small,
 .cardActionFigure small {
     color: #868383;
+    font-size: 16px;
+    font-weight: normal;
 }
